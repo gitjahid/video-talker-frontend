@@ -11,6 +11,7 @@ export const connectWithMyPeer = () => {
   myPeer = new window.Peer(undefined, {
     path: '/peerjs',
     host: '/',
+    port:80,
   });
 
   myPeer.on('open', (id) => {
